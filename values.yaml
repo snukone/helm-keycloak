@@ -173,7 +173,7 @@ keycloak:
         kind: Mapping
         name: oidc-mapping
         prefix: /
-        service: {{ template "keycloak.fullname" . }}:80
+        service: KEYCLOAK_FULLNAME:80
         host: oidc.redwire.consulting
         timeout_ms: 10000
         idle_timeout_ms: 500000

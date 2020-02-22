@@ -4,8 +4,9 @@ kind: Service
 metadata:
   name: {{ template "keycloak.fullname" . }}-http
 {{- with $service.annotations }}
+{{- $var := template "keycloak.fullname" . }}
   annotations:
-{{ toYaml . | indent 4 }}
+{{ toYaml . | replace "KEYCLOAK_FULLNAME" $var | indent 4 }}
 {{- end }}
   labels:
     app: {{ template "keycloak.name" . }}

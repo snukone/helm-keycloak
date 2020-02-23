@@ -206,7 +206,7 @@ keycloak:
     # minAvailable: 1
 
   service:
-    annotations: {}
+    annotations:
       getambassador.io/config: |
         ---
         apiVersion: ambassador/v1

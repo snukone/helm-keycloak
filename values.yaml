@@ -53,7 +53,7 @@ keycloak:
   extraArgs: ""
 
   ## Username for the initial Keycloak admin user
-  username: keycloak
+  username: admin
 
   ## Password for the initial Keycloak admin user. Applicable only if existingSecret is not set.
   ## If not set, a random 10 characters password will be used

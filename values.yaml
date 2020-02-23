@@ -60,7 +60,7 @@ keycloak:
   password: ""
 
   # Specifies an existing secret to be used for the admin password
-  existingSecret: ""
+  existingSecret: "keycloak-sealed-secret"
 
   # The key in the existing secret that stores the password
   existingSecretKey: password
